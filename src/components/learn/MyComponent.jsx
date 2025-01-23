@@ -1,9 +1,19 @@
 import './style.css'
 
 const MyComponent = () => {
+    // const hoidanit = "eric 1"; //string
+    // const hoidanit = 25; //number
+    // const hoidanit = true; //boolean
+    // const hoidanit = undefined;
+    // const hoidanit = null;
+    const hoidanit = [1, 2, 3]
+    // const hoidanit = {
+    //     name: "hoidanit",
+    //     age: 25
+    // }
     return (
         <>
-            <div> Hello my name's Huy</div>
+            <div> {JSON.stringify(hoidanit)} Hello my name's Huy</div>
             <div className="child"
                 style={{ borderRadius: "10px" }}
             >child</div>
