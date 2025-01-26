@@ -11,6 +11,7 @@ import UserPage from './pages/user.jsx';
 import BookPage from './pages/book.jsx';
 import './styles/global.css'
 import ErrorPage from './pages/error.jsx';
+import TodoApp from './components/todo/TodoApp.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        index: true,
+        element: <TodoApp />
+      },
       {
         path: "/users",
         element: <UserPage />
